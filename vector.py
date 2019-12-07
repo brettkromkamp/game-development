@@ -91,7 +91,7 @@ if __name__ == "__main__":
     direction_vector3 = point3 - point4
     print(f"Result: {direction_vector2.length_sqr()}, {direction_vector3.length_sqr()}")
 
-    # Scale a vector up
+    # Scale a vector up or down
     velocity_vector2 = Vector2(3.0, 4.0)
     vector_doubled = velocity_vector2 * 2
     vector_halved = velocity_vector2 / 2
