@@ -18,8 +18,7 @@ class Vector2:
         self.y = y
 
     def length(self) -> float:  # Also known as 'magnitude'
-        # https://en.wikipedia.org/wiki/Pythagorean_theorem
-        length = math.sqrt(self.x * self.x + self.y * self.y)
+        length = math.sqrt(self.x * self.x + self.y * self.y)  # https://en.wikipedia.org/wiki/Pythagorean_theorem
         return length
 
     def length_sqr(self) -> float:
@@ -27,7 +26,7 @@ class Vector2:
         return length
 
     # Scale up
-    def __mul__(self, s: float) -> Vector2:
+    def __mul__(self, s: float) -> Vector2:  # 's' in this context is called a 'scalar' (a value representing only magnitude)
         scaled = Vector2()
         scaled.x = self.x * 2
         scaled.y = self.y * 2
@@ -53,15 +52,12 @@ class Point:
         p2 = Point()
         p2.x = self.x + v.x
         p2.y = self.y + v.y
-
         return p2
 
     def __sub__(self, other: Point) -> Vector2:
         v = Vector2()
-
         v.x = self.x - other.x
         v.y = self.y - other.y
-
         return v
 
 
