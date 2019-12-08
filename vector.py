@@ -18,7 +18,9 @@ class Vector2:
         self.y = y
 
     def length(self) -> float:  # Also known as 'magnitude'
-        length = math.sqrt(self.x * self.x + self.y * self.y)  # https://en.wikipedia.org/wiki/Pythagorean_theorem
+        length = math.sqrt(
+            self.x * self.x + self.y * self.y
+        )  # https://en.wikipedia.org/wiki/Pythagorean_theorem
         return length
 
     def length_sqr(self) -> float:
@@ -26,7 +28,9 @@ class Vector2:
         return length
 
     # Scale up
-    def __mul__(self, s: float) -> Vector2:  # 's' in this context is called a 'scalar' (a value representing only magnitude)
+    def __mul__(
+        self, s: float
+    ) -> Vector2:  # 's' in this context is called a 'scalar' (a value representing only magnitude)
         scaled = Vector2()
         scaled.x = self.x * s
         scaled.y = self.y * s
@@ -39,3 +43,8 @@ class Vector2:
         scaled.y = self.y / s
         return scaled
 
+    # Normalized (or unit-length or normal-length) vector
+    def normalized(self):
+        # https://en.wikibooks.org/wiki/Guide_to_Game_Development/Theory/Mathematics/Vectors#Unit_length_vector
+        normalized = self / self.length()  # Vector2
+        return normalized

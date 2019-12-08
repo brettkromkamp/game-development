@@ -36,12 +36,20 @@ if __name__ == "__main__":
     direction_vector3 = point3 - point4
     print(f"Result: {direction_vector2.length_sqr()}, {direction_vector3.length_sqr()}")
 
-    # Scale a vector up or down
+    # Scale a vector up or down to, for example, increase or decrease the velocity (speed) of an in-game object
     velocity_vector2 = Vector2(3.0, 4.0)
     vector_doubled = velocity_vector2 * 2
     vector_halved = velocity_vector2 / 2
     print(
         f"Result: {velocity_vector2.length()}, {vector_doubled.length()}, {vector_halved.length()}"
     )
+
+    # Vector normalization
+    point6 = Point(3.0, 4.0)
+    point7 = Point(1.0, 2.0)
+
+    vector1 = point6 - point7
+    normalized_vector = vector1.normalized()
+    print(f"Result: {normalized_vector.x}, {normalized_vector.y}, {normalized_vector.length()}")
 
     print("Finished execution")

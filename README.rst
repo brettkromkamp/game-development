@@ -6,6 +6,11 @@ As the title implies, this repo is (will be) a collection of code snippets and a
 .. image:: resources/brave-robot2.png
    :alt: Military robot from the Brave Robot universe
 
+Useful Links
+------------
+* `Guide to Game Development/Theory/Mathematics/Vectors <https://en.wikibooks.org/wiki/Guide_to_Game_Development/Theory/Mathematics/Vectors>`_
+* *Pending...*
+
 How to Contribute
 -----------------
 
