@@ -27,6 +27,18 @@ class Vector2:
         length = self.x * self.x + self.y * self.y
         return length
 
+    def __add__(self, other: Vector2) -> Vector2:
+        v = Vector2()
+        v.x = self.x + other.x
+        v.y = self.y + other.y
+        return v
+
+    def __sub__(self, other: Vector2) -> Vector2:
+        v = Vector2()
+        v.x = self.x - other.x
+        v.y = self.y - other.y
+        return v
+
     # Scale up
     def __mul__(
         self, s: float

@@ -47,9 +47,14 @@ if __name__ == "__main__":
     # Vector normalization
     point6 = Point(3.0, 4.0)
     point7 = Point(1.0, 2.0)
-
     vector1 = point6 - point7
     normalized_vector = vector1.normalized()
     print(f"Result: {normalized_vector.x}, {normalized_vector.y}, {normalized_vector.length()}")
+
+    # Vector addition and subtraction
+    vector2 = Vector2(4.0, 0.0)
+    vector3 = Vector2(0.0, -5.0)
+    vector4 = vector2 + vector3
+    print(f"Result: {vector4.x}, {vector4.y}")
 
     print("Finished execution")
