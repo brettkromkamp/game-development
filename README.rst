@@ -3,7 +3,7 @@ Game Development-related Code and Algorithms by Brett Kromkamp
 
 As the title implies, this repo is (will be) a collection of code snippets and algorithms that are especially relevant for game development. The first set of commits are related to (2D) vectors, an understanding of which is critical for game development. Areas to explore also include graph (for example, Dijkstra and A*) and probability-related algorithms. 
 
-.. image:: resources/brave-robot2.png
+.. image:: resources/brave-robot3.png
    :alt: Military robot from the Brave Robot universe
 
 Useful Links
